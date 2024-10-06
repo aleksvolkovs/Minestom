@@ -1588,6 +1588,42 @@ public class Player extends LivingEntity implements CommandSender, Localizable, 
     }
 
     /**
+     * Gets if the player is in creative mode.
+     *
+     * @return true if the player is in creative mode, false otherwise
+     */
+    public boolean isCreative() {
+        return gameMode == GameMode.CREATIVE;
+    }
+
+    /**
+     * Gets if the player is in spectator mode.
+     *
+     * @return true if the player is in spectator mode, false otherwise
+     */
+    public boolean isSpectator() {
+        return gameMode == GameMode.SPECTATOR;
+    }
+
+    /**
+     * Gets if the player is in survival mode.
+     *
+     * @return true if the player is in survival mode, false otherwise
+     */
+    public boolean isSurvival() {
+        return gameMode == GameMode.SURVIVAL;
+    }
+
+    /**
+     * Gets if the player is in adventure mode.
+     *
+     * @return true if the player is in adventure mode, false otherwise
+     */
+    public boolean isAdventure() {
+        return gameMode == GameMode.ADVENTURE;
+    }
+
+    /**
      * Changes the player {@link GameMode}
      *
      * @param gameMode the new player GameMode
